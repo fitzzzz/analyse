@@ -1,0 +1,11 @@
+<!ELEMENT trace (context, requestanswer*, error?)>
+        <!ELEMENT requestanswer (request, answer)>
+        <!ELEMENT context (budget)>
+        <!ELEMENT request (nom_action)>
+        <!ELEMENT answer (cost)>
+        <!ELEMENT budget ANY>
+        <!ELEMENT nom_action (#PCDATA)>
+        <!ELEMENT parameter ANY>
+        <!ELEMENT cost ANY>
+        <!ELEMENT error (name)>
+        <!ELEMENT name ANY>
